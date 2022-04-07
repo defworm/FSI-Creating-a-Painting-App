@@ -15,3 +15,10 @@ for(let i = 0; i < colorBoxes.length; i++){
         selectedColor = colorBoxes[i].id
     })
 }
+
+let clearButton = document.querySelector('#clear-button')
+clearButton.addEventListener('click', function(){
+document.querySelectorAll('.pixel').forEach(function(element) {
+    element.style.backgroundColor = 'white'
+})
+})
